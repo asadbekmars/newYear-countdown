@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background: #323979;
+  color: snow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Muli', sans-serif;
+  overflow: hidden;
+  text-align: center;
+}
+
+body .fa-snowflake {
+  width: 20px;
+  position: absolute;
+  top: -20px;
+  -webkit-animation: fall linear forwards;
+          animation: fall linear forwards;
+}
+
+@-webkit-keyframes fall {
+  to {
+    -webkit-transform: translateY(105vh);
+            transform: translateY(105vh);
+  }
+}
+
+@keyframes fall {
+  to {
+    -webkit-transform: translateY(105vh);
+            transform: translateY(105vh);
+  }
+}
+
+body .countdown-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .countdown-container .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 15px;
+  font-size: 25px;
+}
+
+body .countdown-container .time h1 {
+  margin-bottom: 0;
+}
+
+body .countdown-container .time small {
+  color: #ccc;
+}
+/*# sourceMappingURL=style.css.map */

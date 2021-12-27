@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+body{
+    height: 100vh;
+    margin: 0;
+    background: #323979;
+	color: snow;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Muli', sans-serif;
+	overflow: hidden;
+	text-align: center;
+    
+
+    .fa-snowflake{
+        width: 20px;
+        position: absolute;
+        top: -20px;
+        animation: fall linear forwards;
+    }
+
+    @keyframes fall {
+        to{
+            transform: translateY(105vh);
+        }    
+    }
+
+
+
+
+    //CoutDown-container-----------
+    .countdown-container{
+        display: flex;
+
+        .time{
+            display: flex;
+            flex-direction: column;
+            margin: 0 15px;
+            font-size: 25px;
+
+            h1{
+                margin-bottom: 0;
+            }
+
+            small{
+                color:#ccc;
+            }
+        }
+    }
+}
